@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask
-
+      
       - name: Install Requirements
         run:  pip install flask flask-wtf
 
@@ -70,3 +70,6 @@ jobs:
       # Enviando o código da App para o Heroku fazer Deploy
       - name: Push to Heroku & Deploy
         run: git push heroku HEAD:main --force
+
+      - name: Install Requirements
+        run:  pip install flask flask-wtf
